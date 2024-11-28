@@ -62,7 +62,7 @@ export default function NavBar({
                 >
                   <span
                     className={clsx(
-                      "absolute inset-0 z-0 h-full translate-y-12 rounded bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
+                      "absolute inset-0 z-0 h-full translate-y-12 rounded bg-[#FD972B] transition-transform duration-300 ease-in-out group-hover:translate-y-0",
                       pathname.includes(asLink(link) as string)
                         ? "translate-y-6"
                         : "translate-y-18",
@@ -102,7 +102,8 @@ function NameLogo({ name }: { name: KeyTextField }) {
       aria-label="Home page"
       className="text-xl font-extrabold tracking-tighter text-slate-900"
     >
-      {name}
+      <img src="/logo_transparent.svg" alt="logo" width="150" />
+      {/* {name} */}
     </Link>
   );
 }
@@ -130,12 +131,13 @@ function DesktopMenu({
             >
               <span
                 className={clsx(
-                  "absolute inset-0 z-0 h-full rounded bg-yellow-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
+                  "absolute inset-0 z-0 h-full rounded bg-[#FD972B] transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
                   pathname.includes(asLink(link) as string)
                     ? "translate-y-6"
                     : "translate-y-8",
                 )}
               />
+              {/* yellow-300 was original */}
               <span className="relative">{label}</span>
             </PrismicNextLink>
           </li>

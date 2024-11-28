@@ -25,7 +25,7 @@ export function Shapes() {
             blur={1}
             far={9}
           />
-          <Environment preset="studio" />
+          <Environment files="/hdr/studio_small_03_1k.hdr" />
         </Suspense>
       </Canvas>
     </div>
